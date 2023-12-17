@@ -169,6 +169,7 @@ void setup() {
          Serial.println("Starting LoRa failed!");
          delay(500);
       }
+  Config.apid="esp32pakapong2";
   Config.autoReconnect = true;
   Portal.config(Config);
   Server.on("/", rootPage);
